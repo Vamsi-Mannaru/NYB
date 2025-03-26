@@ -46,10 +46,10 @@ SELECT
     e.manager_id,
     e.commission_pct,
     nvl(e.commission_pct, 0)                                                
-    nvl2(e.commission_pct,
-         round(commission_pct, 1),
-         0)                                                                 
-    nvl2(e.commission_pct, 'Commission Percentage Exists', 'No Commission') 
+    NVL2(expression, value_if_not_null, value_if_null)
+                                          
+    NVL2(e.commission_pct, 'Has Commission', 'No Commission')
+
 FROM
     employees e;
 
