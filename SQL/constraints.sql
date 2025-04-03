@@ -46,7 +46,7 @@ SELECT
     *
 FROM
     xxnyb_constraints_test;
-REATE TABLE xxnyb_constraints_desc_test (
+REATE TABLE xxnyb_constraints_desc_test 
     col_idx        NUMBER,
     constraint_sno NUMBER,
     description    VARCHAR2(500),
