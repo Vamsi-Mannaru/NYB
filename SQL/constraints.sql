@@ -46,18 +46,20 @@ SELECT
     *
 FROM
     xxnyb_constraints_test;
-REATE TABLE xxnyb_constraints_desc_test 
-    col_idx        NUMBER,
-    constraint_sno NUMBER,
-    description    VARCHAR2(500),
-    comments       VARCHAR2(500),
-    CONSTRAINT col_idx_pk PRIMARY KEY ( col_idx )
+
+CREATE TABLE xxnyb_constraints_desc_test (
+    col_id    NUMBER,
+    col_name  VARCHAR2(100),
+    col_idx   NUMBER,
+    CONSTRAINT pk_xxnyb PRIMARY KEY (col_id)
+);
+
     
 ALTER TABLE xxnyb_constraints_desc_test
 ADD CONSTRAINT const_sno_fk FOREIGN KEY ( constraint_sno )
 REFERENCES xxnyb_constraints_test ( sno );
 
-LTER TABLE XXNYB_EMPLOYEES_TEST
+ALTER TABLE XXNYB_EMPLOYEES_TEST
 ADD CONSTRAINT dept_id_chk
 check(department_id <= 60);
 

@@ -189,7 +189,7 @@ select e.*,
         END case_salary_value
   from employees e;
   
-n
+
 
 SELECT
     e.*,
