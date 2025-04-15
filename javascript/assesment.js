@@ -71,7 +71,7 @@ console.log(checkNumber("abc"));
   console.log(arraySum([10, 20, 30])); 
   console.log(arraySum([]));
 
-  
+
   5//
 
   function arrayAverage(arr) {
