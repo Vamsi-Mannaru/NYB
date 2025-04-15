@@ -82,7 +82,6 @@ const studentInfo =
     {
       result *= i;
     }
-  
     return result;
   }
   console.log(factorial(5)); 
