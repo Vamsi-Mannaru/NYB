@@ -77,7 +77,7 @@ SELECT
 FROM
     dual;
 
-eepthi  
+
 
 SELECT
     TRIM('       Deepthi  ')
@@ -91,10 +91,6 @@ SELECT
 FROM
     dual;
     
-SELECT
-    ltrim('       Deepthi  ')
-FROM
-    dual;   --'Deepthi  '
     
 --RTRIM   
 --s = eeeeeeeeeDeepthieeeeeeeeeeeee
@@ -108,7 +104,7 @@ FROM
 SELECT
     rtrim('       Deepthi  ')
 FROM
-    dual;   --'       Deepthi'
+    dual;   'Deepthi'
     
     
 SELECT

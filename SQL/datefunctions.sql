@@ -1,4 +1,4 @@
--DATE Functions
+
 --SYSDATE
 
 select SYSDATE from dual;
