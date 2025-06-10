@@ -1,8 +1,8 @@
 //11
 // function greet() {
     console.log(`Hello, ${this.name}`);
-  } const person = { name: ‘Vamsi' };
-  greet.call(person);
+   const perso = { name: 'Vamsi' };
+  greet.call(person)
 
   
   function sum(a, b) {
@@ -14,14 +14,14 @@ function greet()
    {
   console.log(`Hello, ${this.name}`);
 }
-const person = { name: 'VamsiI' };
+const n = { name: 'VamsiI' };
 const greetPerson = greet.bind(person);
 
 greetPerson();  
 
 
 //12
-:-      function logUserDetails(...users) {
+     function logUserDetails(...users) {
     users.forEach(user => {
       console.log(`User: ${user.name}, Age: ${user.age}`);
     });
@@ -33,7 +33,7 @@ greetPerson();
 
   
   //13
-  :- let person = {
+   let person = {
     name: "anirudh",
     age: 35,
     address: "Tamilnadu"
@@ -47,7 +47,7 @@ console.table(person);
   
 //15
 
-:-     function factorial(n)
+    function factorial(n)
 {
  if (n === 0 || n === 1)
     {

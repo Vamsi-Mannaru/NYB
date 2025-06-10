@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>removeChild() and remove() with h1</title>
+</head>
+<body>
+
+<h1 id="movies">
+  Movies:
+  <span id="movie1">Inception </span>
+  <span id="movie2">Interstellar </span>
+  <span id="movie3">Tenet</span>
+</h1>
+
+<button onclick="removeSecondMovie()">Remove Second Movie (removeChild)</button>
+<button onclick="removeHeading()">Remove Entire Heading (remove)</button>
+
+<script>
+  function removeSecondMovie() {
+    var heading = document.getElementById("movies");
+    var movie2 = document.getElementById("movie2");
+    
+    if (heading && movie2) {
+      heading.removeChild(movie2);
+      console.log("Removed second movie using removeChild()");
+    } else {
+      console.warn("Movie or heading not found.");
+    }
+  }
+
+  function removeHeading() {
+    var heading = document.getElementById("movies");
+    if (heading) {
+      heading.remove();
+      console.log("Removed entire heading using remove()");
+    } else {
+      console.warn("Heading already removed or not found.");
+    }
+  }
+</script>
+
+</body>
+</html>
